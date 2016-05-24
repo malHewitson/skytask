@@ -38,7 +38,7 @@ server.port=8181
 
 8) Extract the contents into an appropiate folder {install folder}Staging\SkyService\SkyService\bin
 
-9) run SkyService and you shoukd see your springboot service startup
+9) run SkyService and you should see your springboot service startup
 
 10) I have downloaded extjs5.1.1 trial and using SenchaCmd created an application sky, this is located in sky.zip
 
