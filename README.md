@@ -4,7 +4,9 @@ Create a sqlserver db, I have called it sky. Since Microsoft do not publish thei
 
 In the service file application.properites I have used the jtds url assumning the db is local and running on port 1433
 spring.datasource.url=jdbc:jtds:sqlserver://localhost:1433/sky
+
 since you will have a microsoft driver then you could use 
+
 spring.datasource.url=jdbc:sqlserver://localhost:1433;databaseName=sky
 
 1) create sql server database I called it sky
@@ -15,13 +17,17 @@ spring.datasource.url=jdbc:sqlserver://localhost:1433;databaseName=sky
 
 4) skyservice.zip contains an intellijIdea version 14 project gradle using maven central repositories
 The service is groovy, springboot, springdata jpa (hibernate as the provider) 
-The groovy src is in the standard folder SkyService\src\main\groovy, 
+
+The groovy src is in the standard folder SkyService\src\main\groovy
+
 SkyService\src\test\groovy for the tests 
+
 I created another sql server db test and create the table (no need to populate) for the tests 
 
 5) Refresh the intellij project to retrieve the dependencies from maven central 
 
 6) application.properties can either be changed in the intellij project in resources or {install folder}\SkyService\SkyService\lib\SkyService.jar  
+
 the service port can be changed here as well as the datasource url
 server.port=8181
 
