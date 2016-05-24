@@ -49,6 +49,7 @@ server.port=8181
 13)  Extract sky.zip under htdocs
 
 14) in {Apache2.2 install}\conf\httpd.conf I needed to add the following proxy assuming the sky service is running on port 8181
+
 <VirtualHost *:*>
 
     ProxyPreserveHost On
