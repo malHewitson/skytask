@@ -50,9 +50,13 @@ server.port=8181
 
 14) in {Apache2.2 install}\conf\httpd.conf I needed to add the following proxy assuming the sky service is running on port 8181
 <VirtualHost *:*>
+
     ProxyPreserveHost On
+    
     ProxyPass /sky-services http://localhost:8181/sky-services
+    
     ProxyPassReverse /sky-services  http://localhost:8181/sky-services
+    
 </VirtualHost>
 
 15) Assuming appache is running on localhost port 8090 then the UI can be accessed on http://localhost:8090/sky/
