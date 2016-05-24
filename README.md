@@ -1,8 +1,8 @@
 # skytask
 
-Create a sqlserver db, I have called it sky. Since Microsoft do not publish their driver to maven central and I don't have a local maven repository so i can't download the driver from the microsoft website. So I have used the jtds driver, unfortunately this does not support sqlserver 2014 so I have used an earlier version. 
+Create a sqlserver db, I have called it sky. Since Microsoft do not publish their driver to maven central and I don't have a local maven repository into which I could have downloaded the driver from the microsoft website. I have used the jtds driver, unfortunately this does not support sqlserver 2014 so I have used an earlier version of sql server. 
 
-In the service file application.properites I have used the jtds url
+In the service file application.properites I have used the jtds url assumning the db is local and running on port 1433
 spring.datasource.url=jdbc:jtds:sqlserver://localhost:1433/sky
 since you will have a microsoft driver then you could use 
 spring.datasource.url=jdbc:sqlserver://localhost:1433;databaseName=sky
@@ -25,7 +25,7 @@ I created another sql server db test and create the table (no need to populate) 
 the service port can be changed here as well as the datasource url
 server.port=8181
 
-6) terminal gradlew distzip
+6) from within the intellij project terminal gradlew distzip
 
 7) in IdeaProjects\SkyService\build\distributions there will be a zip file SkyService.zip
 
