@@ -29,6 +29,7 @@ I created another sql server db test and create the table (no need to populate) 
 6) application.properties can either be changed in the intellij project in resources or {install folder}\SkyService\SkyService\lib\SkyService.jar  
 
 the service port can be changed here as well as the datasource url
+
 server.port=8181
 
 6) from within the intellij project terminal gradlew distzip
